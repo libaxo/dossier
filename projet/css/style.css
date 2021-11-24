@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
+    max-width: 100%;
+}
+
+/* marge et police */
+body {
+    margin: 0;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* taille de l'arrière plan entête */
+header {
+    background: url("../image figurine/image_site/banière.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;   
+    max-width: 100%;
+}
+
+/* titre banière */
+.titre {
+    display: flex;
+    color: rgb(255, 230, 0);
+    font-size: 60px;
+    height: 20vh;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* sous-titre */
+.sous-titre {
+    display: flex;
+    color:tomato;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+/* sous-titre mobile */
+@media (max-width: 375px) {
+    .sous-titre {
+        max-width: 100%;    
+        font-size: 27px;   
+    }
+}
+
+/* sous-titre mobile */
+@media (max-width: 480px) {
+    .sous-titre {
+        max-width: 100%;       
+    }
+}
+
+/* sous-titre tablettes */
+@media (max-width: 767px) {
+    .sous-titre {
+        max-width: 100%;
+    }
+}
+
+/* sous-titre grands écrans */
+@media (min-width: 1200px) {
+    .sous-titre {
+        max-width: 100%;
+    }
+}
+
+/* onglet navigation */
+header nav {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px;  
+    text-align: center;
+}
+
+header nav a {
+    color:rgb(53, 48, 48);
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+header .entête {
+    margin-top: 40px;
+}
+
+header .entête h4 {
+    margin-top: -10px;
+    padding: 20px;
+}
+
+/* text luffy */
+.oeuvre {
+    background-color: grey;
+    color:white;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Mise en page pour mobile */
+ @media (max-width: 480px) {
+    .oeuvre {
+        background-color: grey;
+        color:white;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+ }
+
+/* Mise en page pour tablettes */
+@media (max-width: 767px) {
+    .oeuvre {
+        background-color: grey;
+        color:white;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* Mise en page pour les grands écrans */
+@media (min-width: 1200px) {
+    .oeuvre {
+        background-color: grey;
+        color:white;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* Image oeuvre */
+.oeuvre .gauche {
+    width: 60%;
+    margin-right: 50px;
+}
+
+/* Mise en page pour les grands écrans */
+@media (max-width: 480px) {
+    .oeuvre .gauche {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+/* Mise en page pour les grands écrans */
+@media (max-width: 767px) {
+    .oeuvre .gauche {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+/* Mise en page pour les grands écrans */
+@media (max-width: 1200px) {
+    .oeuvre .gauche {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+/* Tableau personnages */
+.tableau {
+    margin:0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableau td,.tableau th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+/* Tableau pour mobile */
+@media (max-width: 480px) {
+    .tableau {
+        margin:0;
+        padding: 20px;
+        width: 100%;
+        height: 2000px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+    .tableau td,.tableau th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* Tableau pour tablettes */
+@media (max-width: 767px) {
+    .tableau {
+        margin:0;
+        padding: 20px;
+        width: 100%;
+        height: 2000px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+    .tableau td,.tableau th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* Tableau pour les grands écrans */
+@media (min-width: 1200px) {
+    .tableau {
+        margin:0;
+        padding: 20px;
+        width: 100%;
+        height: 2000px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+    .tableau td,.tableau th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* formulaire */
+.formulaire{
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Mise en page pour mobile */
+@media (max-width: 480px) {
+    .formulaire{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Mise en page pour tablettes */
+@media (max-width: 767px) {
+    .formulaire{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Mise en page pour les grands écrans */
+@media (min-width: 1200px) {
+    .formulaire{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
